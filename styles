@@ -1,0 +1,406 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+body{
+  background-color: #f0efea;
+  font-family: 'Droid Arabic Kufi', serif;font-size:100%;
+}
+
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    .parallelogram1 {
+	width: 60%;
+	height: 0px;
+  border-bottom:90px solid #03b0ad;
+	position: absolute;
+  margin: 0px;
+	clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+}
+.parallelogram2 {
+	width: 60%;
+	height: 0px;
+  border-bottom:50px solid #004e75;
+  clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+	position: absolute;
+	margin-top: 0px;
+  padding-inline-start: 5%;
+  top: 5%;
+  color:white;
+  line-height: 1.5;
+}
+.parallelogram3 {
+  width: 35%;
+	height: 0px;
+  border-bottom:50px solid white;
+  clip-path: polygon(16% 0, 100% 0%, 100% 100%, 5% 100%);
+	left:65%;
+  top: 5%;
+	position: absolute;
+  color:#03b0ad;
+}
+.datestyle{
+  /*background: white;*/
+  color: #5d616d;
+  padding:20px;
+  padding-bottom: 20px;
+  font-size : 15px;
+  font-family: Garamond, serif;
+}
+
+.DayN{
+font-size : 55px;
+}
+
+
+/* white in middle */
+.tasks{
+  width: 300px;
+  height: 670px;
+  position: absolute;
+  top: 25%;
+  left: 0px; 
+  right: 0px;
+  margin: 0px auto;
+  background-color: white;
+}
+
+/*hide the cheakbox*/
+input[type=checkbox] {
+  display: none;
+}
+
+/*tasks labels*/
+label{
+  /*background: white;*/
+  height: 69px;
+  width: 100%;
+  display: block;
+  text-transform: capitalize;
+  font-family: Garamond;
+  font-weight: 900;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-indent: 20px;
+  position: relative;
+  padding: 10px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  color: black;
+  
+}
+
+/*the circle*/
+label:after{
+  content:"";
+  width: 20px;
+  height: 20px;
+  border: solid;
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  right: 20px;
+  top: 30%;
+}
+
+/*for labels after checked*/
+#label-1:checked + label[for=label-1],
+#label-2:checked + label[for=label-2],
+#label-3:checked + label[for=label-3],
+#label-4:checked + label[for=label-4],
+#label-5:checked + label[for=label-5],
+#label-6:checked + label[for=label-6],
+#label-7:checked + label[for=label-7]
+{
+  color: #cccbd0;
+}
+/*for cicles after checked*/
+#label-1:checked + label[for=label-1]:after,
+#label-2:checked + label[for=label-2]:after,
+#label-3:checked + label[for=label-3]:after,
+#label-4:checked + label[for=label-4]:after,
+#label-5:checked + label[for=label-5]:after,
+#label-6:checked + label[for=label-6]:after,
+#label-7:checked + label[for=label-7]:after
+{
+  color:#5bebad;
+}
+
+.plus{
+  width: 50px;
+  position: absolute;
+  top: 133%;
+  left: 0px; 
+  right: 0px;
+  margin: 0px auto;
+}
+}
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px ){
+    .parallelogram1 {
+	width: 70%;
+	height: 0px;
+  border-bottom:90px solid #03b0ad;
+	position: absolute;
+  margin: 0px;
+	clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+}
+.parallelogram2 {
+	width: 66%;
+	height: 0px;
+  border-bottom:50px solid #004e75;
+  clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+	position: absolute;
+	margin-top: 0px;
+  padding-inline-start: 5%;
+  top: 5%;
+  color:white;
+  line-height: 1.5;
+}
+.parallelogram3 {
+  width: 30%;
+	height: 0px;
+  border-bottom:50px solid white;
+  clip-path: polygon(14% 0, 100% 0%, 100% 100%, 0% 100%);
+	left:70%;
+  top: 5%;
+	position: absolute;
+  color:#03b0ad;
+}
+.datestyle{
+  /*background: white;*/
+  color: #5d616d;
+  padding:20px;
+  padding-bottom: 20px;
+  font-size : 15px;
+  font-family: Garamond, serif;
+}
+
+.DayN{
+font-size : 55px;
+}
+
+
+/* white in middle */
+.tasks{
+  width: 300px;
+  height: 670px;
+  position: absolute;
+  top: 25%;
+  left: 0px; 
+  right: 0px;
+  margin: 0px auto;
+  background-color: white;
+}
+
+/*hide the cheakbox*/
+input[type=checkbox] {
+  display: none;
+}
+
+/*tasks labels*/
+label{
+  /*background: white;*/
+  height: 69px;
+  width: 100%;
+  display: block;
+  text-transform: capitalize;
+  font-family: Garamond;
+  font-weight: 900;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-indent: 20px;
+  position: relative;
+  padding: 10px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  color: black;
+  
+}
+
+/*the circle*/
+label:after{
+  content:"";
+  width: 20px;
+  height: 20px;
+  border: solid;
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  right: 20px;
+  top: 30%;
+}
+
+/*for labels after checked*/
+#label-1:checked + label[for=label-1],
+#label-2:checked + label[for=label-2],
+#label-3:checked + label[for=label-3],
+#label-4:checked + label[for=label-4],
+#label-5:checked + label[for=label-5],
+#label-6:checked + label[for=label-6],
+#label-7:checked + label[for=label-7]
+{
+  color: #cccbd0;
+}
+/*for cicles after checked*/
+#label-1:checked + label[for=label-1]:after,
+#label-2:checked + label[for=label-2]:after,
+#label-3:checked + label[for=label-3]:after,
+#label-4:checked + label[for=label-4]:after,
+#label-5:checked + label[for=label-5]:after,
+#label-6:checked + label[for=label-6]:after,
+#label-7:checked + label[for=label-7]:after
+{
+  color:#5bebad;
+}
+
+.plus{
+  width: 50px;
+  position: absolute;
+  top: 133%;
+  left: 0px; 
+  right: 0px;
+  margin: 0px auto;
+}    
+}/*end of tablet media*/
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+}
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  .parallelogram1 {
+	width: 70%;
+	height: 0px;
+  border-bottom:90px solid #03b0ad;
+	position: absolute;
+  margin: 0px;
+	clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+}
+.parallelogram2 {
+	width: 66%;
+	height: 0px;
+  border-bottom:50px solid #004e75;
+  clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+	position: absolute;
+	margin-top: 0px;
+  padding-inline-start: 5%;
+  top: 5%;
+  color:white;
+  line-height: 1.5;
+}
+.parallelogram3 {
+  width: 20%;
+	height: 0px;
+  border-bottom:50px solid white;
+  clip-path: polygon(16% 0, 100% 0%, 100% 100%, 0% 100%);
+	left:80%;
+  top: 5%;
+	position: absolute;
+  color:#03b0ad;
+}
+.datestyle{
+  /*background: white;*/
+  color: #5d616d;
+  padding:20px;
+  padding-bottom: 20px;
+  font-size : 15px;
+  font-family: Garamond, serif;
+}
+
+.DayN{
+font-size : 55px;
+}
+
+
+/* white in middle */
+.tasks{
+  width: 300px;
+  height: 670px;
+  position: absolute;
+  top: 25%;
+  left: 0px; 
+  right: 0px;
+  margin: 0px auto;
+  background-color: white;
+}
+
+/*hide the cheakbox*/
+input[type=checkbox] {
+  display: none;
+}
+
+/*tasks labels*/
+label{
+  /*background: white;*/
+  height: 69px;
+  width: 100%;
+  display: block;
+  text-transform: capitalize;
+  font-family: Garamond;
+  font-weight: 900;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-indent: 20px;
+  position: relative;
+  padding: 10px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  color: black;
+  
+}
+
+/*the circle*/
+label:after{
+  content:"";
+  width: 20px;
+  height: 20px;
+  border: solid;
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  right: 20px;
+  top: 30%;
+}
+
+/*for labels after checked*/
+#label-1:checked + label[for=label-1],
+#label-2:checked + label[for=label-2],
+#label-3:checked + label[for=label-3],
+#label-4:checked + label[for=label-4],
+#label-5:checked + label[for=label-5],
+#label-6:checked + label[for=label-6],
+#label-7:checked + label[for=label-7]
+{
+  color: #cccbd0;
+}
+/*for cicles after checked*/
+#label-1:checked + label[for=label-1]:after,
+#label-2:checked + label[for=label-2]:after,
+#label-3:checked + label[for=label-3]:after,
+#label-4:checked + label[for=label-4]:after,
+#label-5:checked + label[for=label-5]:after,
+#label-6:checked + label[for=label-6]:after,
+#label-7:checked + label[for=label-7]:after
+{
+  color:#5bebad;
+}
+
+.plus{
+  width: 50px;
+  position: absolute;
+  top: 133%;
+  left: 0px; 
+  right: 0px;
+  margin: 0px auto;
+}
+
+}/*end of media laptob*/

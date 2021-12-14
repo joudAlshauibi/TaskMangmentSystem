@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+body{
+  background-color: #f0efea;
+  font-family: 'Droid Arabic Kufi', serif;font-size:100%;
+}
+@media (min-width: 280px) {
+    .parallelogram1 {
+	width: 50%;
+	height: 0px;
+  border-bottom:90px solid #03b0ad;
+	position: absolute;
+  margin: 0px;
+	clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+}
+.parallelogram2 {
+	width: 60%;
+	height: 0px;
+  border-bottom:50px solid #004e75;
+  clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+	position: absolute;
+	margin-top: 0px;
+  padding-inline-start: 5%;
+  top: 5%;
+  color:white;
+  line-height: 1.5;
+  text-size-adjust: auto;
+}
+.parallelogram3 {
+  width: 35%;
+	height: 0px;
+  border-bottom:50px solid white;
+  clip-path: polygon(16% 0, 100% 0%, 100% 100%, 5% 100%);
+	left:65%;
+  top: 5%;
+	position: absolute;
+  color:#03b0ad;
+}
+
+/* white in middle */
+.tasks{
+  width: 250px;
+  height: 670px;
+  position: absolute;
+  top: 25%;
+  left: 0px; 
+  right: 0px;
+  margin: 0px auto;
+  background-color: white;
+}
+
+/*hide the cheakbox*/
+input[type=checkbox] {
+  display: none;
+}
+
+/*tasks labels*/
+label{
+  /*background: white;*/
+  height: 69px;
+  width: 100%;
+  display: block;
+  text-transform: capitalize;
+  font-family: Garamond;
+  font-weight: 900;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-indent: 20px;
+  position: relative;
+  padding: 10px;
+  padding-left: 0px;
+  padding-bottom: 30px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  color: black;
+  
+}
+
+/*the circle*/
+label:after{
+  content:"";
+  width: 20px;
+  height: 20px;
+  border: solid;
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  right: 10px;
+  top: 30%;
+}
+
+
+.plus{
+  width: 50px;
+  position: absolute;
+  top: 133%;
+  left: 0px; 
+  right: 0px;
+  margin: 0px auto;
+}
+}/*end of small phones*/
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    .parallelogram1 {
+	width: 60%;
+	height: 0px;
+  border-bottom:90px solid #03b0ad;
+	position: absolute;
+  margin: 0px;
+	clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+}
+.parallelogram2 {
+	width: 60%;
+	height: 0px;
+  border-bottom:50px solid #004e75;
+  clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+	position: absolute;
+	margin-top: 0px;
+  padding-inline-start: 5%;
+  top: 5%;
+  color:white;
+  line-height: 1.5;
+}
+.parallelogram3 {
+  width: 35%;
+	height: 0px;
+  border-bottom:50px solid white;
+  clip-path: polygon(16% 0, 100% 0%, 100% 100%, 5% 100%);
+	left:65%;
+  top: 5%;
+	position: absolute;
+  color:#03b0ad;
+}
+
+/* white in middle */
+.tasks{
+  width: 300px;
+  height: 670px;
+  position: absolute;
+  top: 25%;
+  left: 0px; 
+  right: 0px;
+  margin: 0px auto;
+  background-color: white;
+}
+
+/*hide the cheakbox*/
+input[type=checkbox] {
+  display: none;
+}
+
+/*tasks labels*/
+label{
+  /*background: white;*/
+  height: 69px;
+  width: 100%;
+  display: block;
+  text-transform: capitalize;
+  font-family: Garamond;
+  font-weight: 900;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-indent: 20px;
+  position: relative;
+  padding: 10px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  color: black;
+  
+}
+
+/*the circle*/
+label:after{
+  content:"";
+  width: 20px;
+  height: 20px;
+  border: solid;
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  right: 20px;
+  top: 30%;
+}
+
+
+.plus{
+  width: 50px;
+  position: absolute;
+  top: 133%;
+  left: 0px; 
+  right: 0px;
+  margin: 0px auto;
+}
+}/*end of phones*/
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px ){
+    .parallelogram1 {
+	width: 70%;
+	height: 0px;
+  border-bottom:90px solid #03b0ad;
+	position: absolute;
+  margin: 0px;
+	clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+}
+.parallelogram2 {
+	width: 66%;
+	height: 0px;
+  border-bottom:50px solid #004e75;
+  clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+	position: absolute;
+	margin-top: 0px;
+  padding-inline-start: 5%;
+  top: 5%;
+  color:white;
+  line-height: 1.5;
+}
+.parallelogram3 {
+  width: 30%;
+	height: 0px;
+  border-bottom:50px solid white;
+  clip-path: polygon(14% 0, 100% 0%, 100% 100%, 0% 100%);
+	left:70%;
+  top: 5%;
+	position: absolute;
+  color:#03b0ad;
+}
+
+
+/* white in middle */
+.tasks{
+  width: 300px;
+  height: 670px;
+  position: absolute;
+  top: 25%;
+  left: 0px; 
+  right: 0px;
+  margin: 0px auto;
+  background-color: white;
+}
+
+/*hide the cheakbox*/
+input[type=checkbox] {
+  display: none;
+}
+
+/*tasks labels*/
+label{
+  /*background: white;*/
+  height: 69px;
+  width: 100%;
+  display: block;
+  text-transform: capitalize;
+  font-family: Garamond;
+  font-weight: 900;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-indent: 20px;
+  position: relative;
+  padding: 10px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  color: black;
+  
+}
+
+/*the circle*/
+label:after{
+  content:"";
+  width: 20px;
+  height: 20px;
+  border: solid;
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  right: 20px;
+  top: 30%;
+}
+
+
+.plus{
+  width: 50px;
+  position: absolute;
+  top: 133%;
+  left: 0px; 
+  right: 0px;
+  margin: 0px auto;
+}    
+}/*end of tablet media*/
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  .parallelogram1 {
+	width: 70%;
+	height: 0px;
+  border-bottom:90px solid #03b0ad;
+	position: absolute;
+  margin: 0px;
+	clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+}
+.parallelogram2 {
+	width: 66%;
+	height: 0px;
+  border-bottom:50px solid #004e75;
+  clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+	position: absolute;
+	margin-top: 0px;
+  padding-inline-start: 5%;
+  top: 5%;
+  color:white;
+  line-height: 1.5;
+}
+.parallelogram3 {
+  width: 20%;
+	height: 0px;
+  border-bottom:50px solid white;
+  clip-path: polygon(16% 0, 100% 0%, 100% 100%, 0% 100%);
+	left:80%;
+  top: 5%;
+	position: absolute;
+  color:#03b0ad;
+}
+
+/* white in middle */
+.tasks{
+  width: 300px;
+  height: 670px;
+  position: absolute;
+  top: 25%;
+  left: 0px; 
+  right: 0px;
+  margin: 0px auto;
+  background-color: white;
+}
+
+/*hide the cheakbox*/
+input[type=checkbox] {
+  display: none;
+}
+
+/*tasks labels*/
+label{
+  /*background: white;*/
+  height: 69px;
+  width: 100%;
+  display: block;
+  text-transform: capitalize;
+  font-family: Garamond;
+  font-weight: 900;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-indent: 20px;
+  position: relative;
+  padding: 10px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  color: black;
+  
+}
+
+/*the circle*/
+label:after{
+  content:"";
+  width: 20px;
+  height: 20px;
+  border: solid;
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  right: 20px;
+  top: 30%;
+}
+
+.plus{
+  width: 50px;
+  position: absolute;
+  top: 133%;
+  left: 0px; 
+  right: 0px;
+  margin: 0px auto;
+}
+
+
+}/*end of media laptob*/
+/*****************************************************************************************************/
+
+.datestyle{
+  /*background: white;*/
+  color: #5d616d;
+  padding:20px;
+  padding-bottom: 20px;
+  font-size : 15px;
+  font-family: Garamond, serif;
+}
+
+.DayN{
+font-size : 55px;
+}
+
+/*for labels after checked*/
+#label-1:checked + label[for=label-1],
+#label-2:checked + label[for=label-2],
+#label-3:checked + label[for=label-3],
+#label-4:checked + label[for=label-4],
+#label-5:checked + label[for=label-5],
+#label-6:checked + label[for=label-6],
+#label-7:checked + label[for=label-7]
+{
+  color: #cccbd0;
+}
+/*for cicles after checked*/
+#label-1:checked + label[for=label-1]:after,
+#label-2:checked + label[for=label-2]:after,
+#label-3:checked + label[for=label-3]:after,
+#label-4:checked + label[for=label-4]:after,
+#label-5:checked + label[for=label-5]:after,
+#label-6:checked + label[for=label-6]:after,
+#label-7:checked + label[for=label-7]:after
+{
+  color:#5bebad;
+}
+
+</style>
+</head>
+<body>
+<header>
+
+<div class="parallelogram1">
+</div>
+    <p class="parallelogram2" dir="rtl"> نظام ادارة المهـام <br> Task Management System</p>
+    
+    <img src="1.jpg" alt="+" width="90" height="90" style="position:absolute; top: 7%; left: 5%;">
+
+  <div class="parallelogram3" dir="rtl"> 
+    &ensp;<img src="twitter.png" alt="twitter" width="30" height="30" style="margin: 3px; display: inline;">
+    <p style="display: inline;">&nbsp;&nbsp; ادارة الموظفين</p>
+  </div>
+	
+</header>
+
+<div class="tasks">
+</br> 
+
+  <table class="datestyle">
+    <tr>
+      <th rowspan="2" id="dayn" class="DayN">lama</th>
+      <td id="monthh">joud</td>
+      <td style="width: 100%;" rowspan="2" id="day" dir="rtl"></td>
+    </tr>
+    <tr>
+     <td id="year">fouad</td>
+    </tr>
+  </table>
+  
+  <input id='label-1' type='checkbox' >
+  <label for='label-1'>
+    <p>buy new sweatshirt</p>   
+  </label>
+  
+  <input id='label-2' type='checkbox' >
+  <label for='label-2'>
+    <p>begin promotional phase </p>   
+  </label>
+  
+  <input id='label-3' type='checkbox'/>
+  <label for='label-3'>
+    <p>Read an article</p>   
+  </label>
+
+  <input id='label-4' type='checkbox'/>
+  <label for='label-4'>
+    <p>Try not to fall asleep</p>   
+  </label>
+
+  <input id='label-5' type='checkbox'/>
+  <label for='label-5'>
+    <p>watch sherlock</p>   
+  </label>
+
+  <input id='label-6' type='checkbox'/>
+  <label for='label-6'>
+    <p>begin QA</p>   
+  </label>
+
+  <input id='label-7' type='checkbox'/>
+  <label for='label-7'>
+    <p>Go for a Walk</p>   
+  </label>
+
+</div>
+  <div class="plus">
+    <img src="+ sign.png" alt="+" width="50" height="50" style="border-radius: 50%;"> 
+</div>
+
+  
+
+
+
+<script>
+//GET DATE
+const y = new Date();
+document.getElementById("year").innerHTML = y.getFullYear();
+
+const dn = new Date();
+let dayn = dn.getDate();
+document.getElementById("dayn").innerHTML = dayn;
+
+
+const months = ["JAN","FEB","MAR","APR","MAY","JUNE","JUL","AUG","SEP","OCT","NOV","DEC"];
+
+const m = new Date();
+let month = months[m.getMonth()];
+document.getElementById("monthh").innerHTML = month;
+
+const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+const d = new Date();
+let day = days[d.getDay()];
+document.getElementById("day").innerHTML = day;
+
+</script>
+
+</body>
+</html>

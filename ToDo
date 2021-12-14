@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body{
+  background-color: #f0efea;
+}
+
+/* tasks */
+.tasks{
+  font-family: Garamond, serif;
+  font-size : 15px;
+  width: 300px;
+  height: 405px;
+  position: absolute;
+  top: 20%;
+  left: 0px; 
+  right: 0px;
+  margin: 0px auto;
+  color: black;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+label{
+  background: white;
+  height: 69px;
+  width: 100%;
+  display: block;
+  text-transform: capitalize;
+  font-weight: 900;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-indent: 20px;
+  cursor: pointer;
+  transition: all 0.7s ease;
+  position: relative;
+  padding: 5px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  color: black;
+}
+
+
+label:before{
+  content:"";
+  width: 20px;
+  height: 20px;
+  background: white;
+  border: solid;
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  right: 20px;
+  top: 30%;
+  transition: border 0.7s ease
+}
+
+#label-1:checked ~ label[for=label-1],
+#label-2:checked ~ label[for=label-2],
+#label-3:checked ~ label[for=label-3],
+#label-4:checked ~ label[for=label-4],
+#label-5:checked ~ label[for=label-5]
+{
+  color: #cccbd0;
+}
+
+#label-1:checked ~ label[for=label-1]:before,
+#label-2:checked ~ label[for=label-2]:before,
+#label-3:checked ~ label[for=label-3]:before,
+#label-4:checked ~ label[for=label-4]:before,
+#label-5:checked ~ label[for=label-5]:before
+{
+  color:#5bebad;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+.row {
+  display: flex;
+}
+</style>
+</head>
+<body dir="auto" >
+<header>
+<div class="row">
+  <div style="width:70%;">
+    <img src="h2.png" alt="bar" >
+  </div>
+  <div style="width:30%;">
+    <img src="h1.png" alt="twitter" >
+  </div> 
+</div>
+
+</header>
+
+
+
+<form class="tasks">
+
+<div>
+  <p id="day"></p>
+  <p id="dayn"></p>
+  <p id="monthh"></p>
+  <p id="year"></p>
+</div>
+<div>
+  <input id='label-1' type='checkbox' >
+  <label for='label-1'>
+    <p>Eat My Breakfast</p>   
+  </label>
+  <!-- task 2 -->
+  <input id='label-2' type='checkbox' >
+  <label for='label-2'>
+    <p>e-mail processing </p>   
+  </label>
+  <input id='label-3' type='checkbox'/>
+  <label for='label-3'>
+    <p>Meditation</p>   
+  </label>
+  </div>
+  <p><img src="+.png" alt="+" width="30" height="30" style="margin-left:auto; margin-right:auto;"></p>
+  
+</form>
+
+  
+
+<script>
+
+//GET DATE
+const dn = new Date();
+let dayn = dn.getDate();
+document.getElementById("dayn").innerHTML = dayn;
+
+
+const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+const d = new Date();
+let day = days[d.getDay()];
+document.getElementById("day").innerHTML = day;
+
+const months = ["JAN","FEB","MAR","APR","MAY","JUNE","JUL","AUG","SEP","OCT","NOV","DEC"];
+
+const m = new Date();
+let month = months[m.getMonth()];
+document.getElementById("monthh").innerHTML = month;
+
+const y = new Date();
+document.getElementById("year").innerHTML = y.getFullYear();
+
+
+</script>
+
+</body>
+</html>
