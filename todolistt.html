@@ -7,6 +7,7 @@
 body{
   background-color: #f0efea;
   font-family: 'Droid Arabic Kufi', serif;font-size:100%;
+  font-weight: 500;
 }
 @media (min-width: 280px) {
     .parallelogram1 {
@@ -15,28 +16,28 @@ body{
   border-bottom:90px solid #03b0ad;
 	position: absolute;
   margin: 0px;
-	clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+	clip-path: polygon(0 0, 100% 0%, 90% 75%, 0% 75%);
 }
 .parallelogram2 {
 	width: 60%;
 	height: 0px;
-  border-bottom:50px solid #004e75;
-  clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+    border-bottom:50px solid #004e75;
+    clip-path: polygon(0 0, 100% 0%, 95% 80%, 0% 80%);
 	position: absolute;
 	margin-top: 0px;
-  padding-inline-start: 5%;
-  top: 5%;
-  color:white;
-  line-height: 1.5;
-  text-size-adjust: auto;
+    padding-inline-start: 5%;
+    top: 3.5%;
+    color:white;
+    line-height: 1.5;
+    font-size: 12px;
 }
 .parallelogram3 {
   width: 35%;
 	height: 0px;
   border-bottom:50px solid white;
-  clip-path: polygon(16% 0, 100% 0%, 100% 100%, 5% 100%);
+  clip-path: polygon(16% 0, 100% 0%, 100% 80%, 5% 80%);
 	left:65%;
-  top: 5%;
+  top: 3.5%;
 	position: absolute;
   color:#03b0ad;
 }
@@ -94,15 +95,23 @@ label:after{
   top: 30%;
 }
 
-
-.plus{
-  width: 50px;
-  position: absolute;
-  top: 133%;
-  left: 0px; 
-  right: 0px;
-  margin: 0px auto;
+.bar{
+    position:absolute; 
+    top: 9%; 
+    left: 5%;
+    width:40px ;
+    height:40px;
 }
+
+.twitter{
+    width:20px; 
+    height:20px;
+    margin: 3px; 
+    display: inline;
+    border-radius: 7px;
+    font-size: 12px;
+}
+
 }/*end of small phones*/
 
 /*Small devices (landscape phones, 576px and up)*/
@@ -126,6 +135,7 @@ label:after{
   top: 5%;
   color:white;
   line-height: 1.5;
+  font-size: 15px;
 }
 .parallelogram3 {
   width: 35%;
@@ -191,16 +201,23 @@ label:after{
   top: 30%;
 }
 
-
-.plus{
-  width: 50px;
-  position: absolute;
-  top: 133%;
-  left: 0px; 
-  right: 0px;
-  margin: 0px auto;
+.bar{
+    position:absolute; top: 7%; left: 5%;
+    width:90px ;
+    height:90px;
 }
+
+.twitter{
+    width:30px; 
+    height:30px;
+    margin: 3px; 
+    display: inline;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
 }/*end of phones*/
+
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px ){
     .parallelogram1 {
@@ -222,6 +239,7 @@ label:after{
   top: 5%;
   color:white;
   line-height: 1.5;
+  font-size: 15px;
 }
 .parallelogram3 {
   width: 30%;
@@ -288,16 +306,23 @@ label:after{
   top: 30%;
 }
 
+.bar{
+    position:absolute; top: 7%; left: 5%;
+    width:90px ;
+    height:90px;
+}
 
-.plus{
-  width: 50px;
-  position: absolute;
-  top: 133%;
-  left: 0px; 
-  right: 0px;
-  margin: 0px auto;
-}    
+.twitter{
+    width:40px; 
+    height:40px;
+    margin: 3px; 
+    display: inline;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
 }/*end of tablet media*/
+
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
   .parallelogram1 {
@@ -319,6 +344,7 @@ label:after{
   top: 5%;
   color:white;
   line-height: 1.5;
+  font-size: 15px;
 }
 .parallelogram3 {
   width: 20%;
@@ -384,15 +410,22 @@ label:after{
   top: 30%;
 }
 
-.plus{
-  width: 50px;
-  position: absolute;
-  top: 133%;
-  left: 0px; 
-  right: 0px;
-  margin: 0px auto;
+.bar{
+    position:absolute; 
+    top: 7%; 
+    left: 5%;
+    width:90px ;
+    height:90px;
 }
 
+.twitter{
+    width:50px; 
+    height:50px;
+    border-radius: 7px;
+    font-size: 15px;
+    top: 10px;
+    right: 10px;
+}
 
 }/*end of media laptob*/
 /*****************************************************************************************************/
@@ -433,20 +466,19 @@ font-size : 55px;
   color:#5bebad;
 }
 
-.bar{
-    position:absolute; top: 7%; left: 5%;
-    width:"90" ;
-    height:"90";
+
+.plus{
+  
+  position: absolute;
+  top: 120%;
+  left: 0px; 
+  right: 0px;
+  margin: 0px auto;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
 }
 
-.twitter{
-    width:"30"; 
-    height:"30";
-    margin: 3px; 
-    display: inline;
-    border-radius: 7px;
-
-}
 
 </style>
 </head>
@@ -460,8 +492,8 @@ font-size : 55px;
     <img src="1.jpg" alt="+" class="bar">
 
   <div class="parallelogram3" dir="rtl"> 
-    &ensp;<img src="twitter.png" alt="twitter" class="twitter">
-    <p style="display: inline;">&nbsp;&nbsp; ادارة الموظفين</p>
+    <img src="twitter.png" alt="twitter" class="twitter">
+    <p class= "twitter">ادارة الموظفين</p>
   </div>
 	
 </header>
@@ -517,7 +549,7 @@ font-size : 55px;
 
 </div>
   <div class="plus">
-    <img src="+ sign.png" alt="+" width="50" height="50" style="border-radius: 100%;"> 
+    <img src="+ sign.png" alt="+" class="plus"> 
 </div>
 
   
