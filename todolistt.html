@@ -5,21 +5,21 @@
 <style>
 @import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
 body{
-  background-color: #f0efea;
-  font-family: 'Droid Arabic Kufi', serif;font-size:100%;
-  font-weight: 500;
+    background-color: #f0efea;
+    font-family: 'Droid Arabic Kufi', serif;font-size:100%;
+    font-weight: 500;
 }
 @media (min-width: 280px) {
     .parallelogram1 {
-	width: 50%;
+	width: 40%;
 	height: 0px;
-  border-bottom:90px solid #03b0ad;
+    border-bottom:90px solid #03b0ad;
 	position: absolute;
-  margin: 0px;
+    margin: 0px;
 	clip-path: polygon(0 0, 100% 0%, 90% 75%, 0% 75%);
 }
 .parallelogram2 {
-	width: 60%;
+	width: 50%;
 	height: 0px;
     border-bottom:50px solid #004e75;
     clip-path: polygon(0 0, 100% 0%, 95% 80%, 0% 80%);
@@ -32,67 +32,67 @@ body{
     font-size: 12px;
 }
 .parallelogram3 {
-  width: 35%;
+    width: 45%;
 	height: 0px;
-  border-bottom:50px solid white;
-  clip-path: polygon(16% 0, 100% 0%, 100% 80%, 5% 80%);
-	left:65%;
-  top: 3.5%;
+    border-bottom:50px solid white;
+    clip-path: polygon(13% 0, 100% 0%, 100% 80%, 5% 80%);
+	left:55%;
+    top: 3.5%;
 	position: absolute;
-  color:#03b0ad;
+    color:#03b0ad;
 }
 
 /* white in middle */
 .tasks{
-  width: 250px;
-  height: 670px;
-  position: absolute;
-  top: 25%;
-  left: 0px; 
-  right: 0px;
-  margin: 0px auto;
-  background-color: white;
+    width: 250px;
+    height: 670px;
+    position: absolute;
+    top: 25%;
+    left: 0px; 
+    right: 0px;
+    margin: 0px auto;
+    background-color: white;
 }
 
 /*hide the cheakbox*/
 input[type=checkbox] {
-  display: none;
+    display: none;
 }
 
 /*tasks labels*/
 label{
   /*background: white;*/
-  height: 69px;
-  width: 100%;
-  display: block;
-  text-transform: capitalize;
-  font-family: Garamond;
-  font-weight: 900;
-  font-size: 15px;
-  letter-spacing: 1px;
-  text-indent: 20px;
-  position: relative;
-  padding: 10px;
-  padding-left: 0px;
-  padding-bottom: 30px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  color: black;
+    height: 69px;
+    width: 100%;
+    display: block;
+    text-transform: capitalize;
+    font-family: Garamond;
+    font-weight: 900;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-indent: 20px;
+    position: relative;
+    padding: 10px;
+    padding-left: 0px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    color: black;
   
 }
 
 /*the circle*/
 label:after{
-  content:"";
-  width: 20px;
-  height: 20px;
-  border: solid;
-  display: block;
-  position: absolute;
-  border-radius: 100%;
-  right: 10px;
-  top: 30%;
+   content:"";
+   width: 20px;
+   height: 20px;
+   border: solid;
+   display: block;
+   position: absolute;
+   border-radius: 100%;
+   right: 10px;
+   top: 30%;
 }
 
 .bar{
@@ -103,13 +103,23 @@ label:after{
     height:40px;
 }
 
-.twitter{
-    width:20px; 
-    height:20px;
-    margin: 3px; 
-    display: inline;
+.twitterpic{
+    width:30px; 
+    height:30px;
     border-radius: 7px;
+    font-size: 15px;
+    top: 26px;
+    left: 87%;
+    position: absolute;
+   color:#03b0ad;
+}
+
+.twitter{ 
     font-size: 12px;
+    top: 20px;
+    color:#03b0ad;
+    left: 57%;
+    position: absolute;
 }
 
 }/*end of small phones*/
@@ -119,101 +129,111 @@ label:after{
     .parallelogram1 {
 	width: 60%;
 	height: 0px;
-  border-bottom:90px solid #03b0ad;
+    border-bottom:90px solid #03b0ad;
 	position: absolute;
-  margin: 0px;
+    margin: 0px;
 	clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
 }
 .parallelogram2 {
 	width: 60%;
 	height: 0px;
-  border-bottom:50px solid #004e75;
-  clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+    border-bottom:50px solid #004e75;
+    clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
 	position: absolute;
 	margin-top: 0px;
-  padding-inline-start: 5%;
-  top: 5%;
-  color:white;
-  line-height: 1.5;
-  font-size: 15px;
+    padding-inline-start: 5%;
+    top: 5%;
+    color:white;
+    line-height: 1.5;
+    font-size: 15px;
 }
 .parallelogram3 {
-  width: 35%;
+    width: 35%;
 	height: 0px;
-  border-bottom:50px solid white;
-  clip-path: polygon(16% 0, 100% 0%, 100% 100%, 5% 100%);
+    border-bottom:50px solid white;
+    clip-path: polygon(16% 0, 100% 0%, 100% 100%, 5% 100%);
 	left:65%;
-  top: 5%;
+    top: 5%;
 	position: absolute;
-  color:#03b0ad;
+    color:#03b0ad;
 }
 
 /* white in middle */
 .tasks{
-  width: 300px;
-  height: 670px;
-  position: absolute;
-  top: 25%;
-  left: 0px; 
-  right: 0px;
-  margin: 0px auto;
-  background-color: white;
+    width: 300px;
+    height: 670px;
+    position: absolute;
+    top: 25%;
+    left: 0px; 
+    right: 0px;
+    margin: 0px auto;
+    background-color: white;
 }
 
 /*hide the cheakbox*/
 input[type=checkbox] {
-  display: none;
+   display: none;
 }
 
 /*tasks labels*/
 label{
   /*background: white;*/
-  height: 69px;
-  width: 100%;
-  display: block;
-  text-transform: capitalize;
-  font-family: Garamond;
-  font-weight: 900;
-  font-size: 15px;
-  letter-spacing: 1px;
-  text-indent: 20px;
-  position: relative;
-  padding: 10px;
-  padding-left: 20px;
-  padding-bottom: 30px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  color: black;
+   height: 69px;
+   width: 100%;
+   display: block;
+   text-transform: capitalize;
+   font-family: Garamond;
+   font-weight: 900;
+   font-size: 15px;
+   letter-spacing: 1px;
+   text-indent: 20px;
+   position: relative;
+   padding: 10px;
+   padding-left: 20px;
+   padding-bottom: 30px;
+   box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   color: black;
   
 }
 
 /*the circle*/
 label:after{
-  content:"";
-  width: 20px;
-  height: 20px;
-  border: solid;
-  display: block;
-  position: absolute;
-  border-radius: 100%;
-  right: 20px;
-  top: 30%;
+   content:"";
+   width: 20px;
+   height: 20px;
+   border: solid;
+   display: block;
+   position: absolute;
+   border-radius: 100%;
+   right: 20px;
+   top: 30%;
 }
 
 .bar{
-    position:absolute; top: 7%; left: 5%;
-    width:90px ;
-    height:90px;
+   position:absolute; top: 7%; left: 5%;
+   width:90px ;
+   height:90px;
 }
 
-.twitter{
-    width:30px; 
-    height:30px;
-    margin: 3px; 
-    display: inline;
-    border-radius: 7px;
+.twitterpic{
+   width:40px; 
+   height:40px;
+   border-radius: 7px;   
+   font-size: 15px;
+   top: 35px;
+   left: 92%;
+   position: absolute;
+   color:#03b0ad;
+}
+
+.twitter{ 
     font-size: 15px;
+    top: 28px;
+    color:#03b0ad;
+    left: 74%;
+    position: absolute;
 }
 
 }/*end of phones*/
@@ -223,87 +243,86 @@ label:after{
     .parallelogram1 {
 	width: 70%;
 	height: 0px;
-  border-bottom:90px solid #03b0ad;
+    border-bottom:90px solid #03b0ad;
 	position: absolute;
-  margin: 0px;
+    margin: 0px;
 	clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
 }
 .parallelogram2 {
 	width: 66%;
 	height: 0px;
-  border-bottom:50px solid #004e75;
-  clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+    border-bottom:50px solid #004e75;
+    clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
 	position: absolute;
 	margin-top: 0px;
-  padding-inline-start: 5%;
-  top: 5%;
-  color:white;
-  line-height: 1.5;
-  font-size: 15px;
+    padding-inline-start: 5%;
+    top: 5%;
+    color:white;
+    line-height: 1.5;
+    font-size: 15px;
 }
 .parallelogram3 {
-  width: 30%;
+    width: 30%;
 	height: 0px;
-  border-bottom:50px solid white;
-  clip-path: polygon(14% 0, 100% 0%, 100% 100%, 0% 100%);
+    border-bottom:50px solid white;
+    clip-path: polygon(14% 0, 100% 0%, 100% 100%, 0% 100%);
 	left:70%;
-  top: 5%;
+    top: 5%;
 	position: absolute;
-  color:#03b0ad;
+    color:#03b0ad;
 }
 
 
 /* white in middle */
 .tasks{
-  width: 300px;
-  height: 670px;
-  position: absolute;
-  top: 25%;
-  left: 0px; 
-  right: 0px;
-  margin: 0px auto;
-  background-color: white;
+    width: 300px;
+    height: 670px;
+    position: absolute;
+    top: 25%;
+    left: 0px; 
+    right: 0px;
+    margin: 0px auto;
+    background-color: white;
 }
 
 /*hide the cheakbox*/
 input[type=checkbox] {
-  display: none;
+    display: none;
 }
 
 /*tasks labels*/
 label{
   /*background: white;*/
-  height: 69px;
-  width: 100%;
-  display: block;
-  text-transform: capitalize;
-  font-family: Garamond;
-  font-weight: 900;
-  font-size: 15px;
-  letter-spacing: 1px;
-  text-indent: 20px;
-  position: relative;
-  padding: 10px;
-  padding-left: 20px;
-  padding-bottom: 30px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  color: black;
-  
+    height: 69px;
+    width: 100%;
+    display: block;
+    text-transform: capitalize;
+    font-family: Garamond;
+    font-weight: 900;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-indent: 20px;
+    position: relative;
+    padding: 10px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    color: black; 
 }
 
 /*the circle*/
 label:after{
-  content:"";
-  width: 20px;
-  height: 20px;
-  border: solid;
-  display: block;
-  position: absolute;
-  border-radius: 100%;
-  right: 20px;
-  top: 30%;
+    content:"";
+    width: 20px;
+    height: 20px;
+    border: solid;
+    display: block;
+    position: absolute;
+    border-radius: 100%;
+    right: 20px;
+    top: 30%;
 }
 
 .bar{
@@ -312,102 +331,111 @@ label:after{
     height:90px;
 }
 
-.twitter{
+.twitterpic{
     width:40px; 
     height:40px;
-    margin: 3px; 
-    display: inline;
     border-radius: 7px;
     font-size: 15px;
+    top: 35px;
+    left: 94%;
+    position: absolute;
+    color:#03b0ad;
+}
+
+.twitter{ 
+    font-size: 15px;
+    top: 30px;
+    color:#03b0ad;
+    left: 80%;
+    position: absolute;
 }
 
 }/*end of tablet media*/
 
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-  .parallelogram1 {
+.parallelogram1 {
 	width: 70%;
 	height: 0px;
-  border-bottom:90px solid #03b0ad;
+    border-bottom:90px solid #03b0ad;
 	position: absolute;
-  margin: 0px;
+    margin: 0px;
 	clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
 }
 .parallelogram2 {
 	width: 66%;
 	height: 0px;
-  border-bottom:50px solid #004e75;
-  clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+    border-bottom:50px solid #004e75;
+    clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
 	position: absolute;
 	margin-top: 0px;
-  padding-inline-start: 5%;
-  top: 5%;
-  color:white;
-  line-height: 1.5;
-  font-size: 15px;
+    padding-inline-start: 5%;
+    top: 5%;
+    color:white;
+    line-height: 1.5;
+    font-size: 15px;
 }
 .parallelogram3 {
-  width: 20%;
+    width: 20%;
 	height: 0px;
-  border-bottom:50px solid white;
-  clip-path: polygon(16% 0, 100% 0%, 100% 100%, 0% 100%);
+    border-bottom:50px solid white;
+    clip-path: polygon(16% 0, 100% 0%, 100% 100%, 0% 100%);
 	left:80%;
-  top: 5%;
+    top: 5%;
 	position: absolute;
-  color:#03b0ad;
+    color:#03b0ad;
 }
 
 /* white in middle */
 .tasks{
-  width: 300px;
-  height: 670px;
-  position: absolute;
-  top: 25%;
-  left: 0px; 
-  right: 0px;
-  margin: 0px auto;
-  background-color: white;
+    width: 300px;
+    height: 670px;
+    position: absolute;
+    top: 25%;
+    left: 0px; 
+    right: 0px;
+    margin: 0px auto;
+    background-color: white;
 }
 
 /*hide the cheakbox*/
 input[type=checkbox] {
-  display: none;
+    display: none;
 }
 
 /*tasks labels*/
 label{
   /*background: white;*/
-  height: 69px;
-  width: 100%;
-  display: block;
-  text-transform: capitalize;
-  font-family: Garamond;
-  font-weight: 900;
-  font-size: 15px;
-  letter-spacing: 1px;
-  text-indent: 20px;
-  position: relative;
-  padding: 10px;
-  padding-left: 20px;
-  padding-bottom: 30px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  color: black;
-  
+    height: 69px;
+    width: 100%;
+    display: block;
+    text-transform: capitalize;
+    font-family: Garamond;
+    font-weight: 900;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-indent: 20px;
+    position: relative;
+    padding: 10px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    color: black;
 }
 
 /*the circle*/
 label:after{
-  content:"";
-  width: 20px;
-  height: 20px;
-  border: solid;
-  display: block;
-  position: absolute;
-  border-radius: 100%;
-  right: 20px;
-  top: 30%;
+    content:"";
+    width: 20px;
+    height: 20px;
+    border: solid;
+    display: block;
+    position: absolute;
+    border-radius: 100%;
+    right: 20px;
+    top: 30%;
 }
 
 .bar{
@@ -418,13 +446,23 @@ label:after{
     height:90px;
 }
 
-.twitter{
-    width:50px; 
-    height:50px;
+.twitterpic{
+    width:40px; 
+    height:40px;
     border-radius: 7px;
     font-size: 15px;
-    top: 10px;
-    right: 10px;
+    top: 35px;
+    left: 95%;
+    position: absolute;
+  color:#03b0ad;
+}
+
+.twitter{ 
+    font-size: 15px;
+    top: 30px;
+    color:#03b0ad;
+    left: 85%;
+    position: absolute;
 }
 
 }/*end of media laptob*/
@@ -432,15 +470,15 @@ label:after{
 
 .datestyle{
   /*background: white;*/
-  color: #5d616d;
-  padding:20px;
-  padding-bottom: 20px;
-  font-size : 15px;
-  font-family: Garamond, serif;
+    color: #5d616d;
+    padding:20px;
+    padding-bottom: 20px;
+    font-size : 15px;
+    font-family: Garamond, serif;
 }
 
 .DayN{
-font-size : 55px;
+    font-size : 55px;
 }
 
 /*for labels after checked*/
@@ -488,13 +526,12 @@ font-size : 55px;
 <div class="parallelogram1">
 </div>
     <p class="parallelogram2" dir="rtl"> نظام ادارة المهـام <br> Task Management System</p>
-    
     <img src="1.jpg" alt="+" class="bar">
 
-  <div class="parallelogram3" dir="rtl"> 
-    <img src="twitter.png" alt="twitter" class="twitter">
-    <p class= "twitter">ادارة الموظفين</p>
-  </div>
+<div class="parallelogram3"> 
+</div>
+  <img src="twitter.png" alt="twitter" class="twitterpic">
+    <p class= "twitter" dir="rtl">ادارة الموظفين</p>
 	
 </header>
 
